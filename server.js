@@ -12,7 +12,7 @@ app.post('/gerar-etp', async (req, res) => {
 
   try {
     // Enviar os dados para o GPT personalizado e obter a resposta
-    const respostaGPT = await axios.post('URL_DO_SEU_GPT_PERSONALIZADO', dadosETP);
+    const respostaGPT = await axios.post('https://github.com/ffernandes2414/etp-gpt-server', dadosETP);
 
     res.json(respostaGPT.data);
   } catch (error) {
